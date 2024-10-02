@@ -1,3 +1,19 @@
 <app-header/>
-<p>home works!</p>
+<main>
+  <app-knowledge/>
+  <app-experiences/>
+
+  @defer (on viewport) {
+    <app-projects/>
+  } @placeholder {
+      <section>
+          <h2>Carregando todos os projetos Desenvolvidos...</h2>
+      </section>
+  }@error {
+      <section>
+        <h2>Ocorreu um erro no download do component, tente novamente...</h2>
+    </section>
+  }
+</main>
+
 
