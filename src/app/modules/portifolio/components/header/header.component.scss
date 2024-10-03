@@ -8,6 +8,11 @@
     background: var(--primary);
   }
 
+  h1{
+    font-size: 22px;
+    font-weight: bold;
+  }
+
   header, aside{
     display: flex;
     flex-direction: column;
